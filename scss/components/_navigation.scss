@@ -1,3 +1,5 @@
+@use "../abstract/" as *;
+
 @layer components {
   .globalNav {
     height: 4.4rem;
@@ -6,14 +8,13 @@
   .localNav__links {
     display: flex;
     align-items: center;
-    max-width: 100rem;
+    max-width: $webWidth;
     height: 100%;
     margin: 0 auto;
   }
   .globalNav__links {
     justify-content: space-between;
   }
-
   .globalNav__item {
     font-size: 1.4rem;
     
@@ -32,7 +33,9 @@
       font-weight: 900;
       font-size: 1.6rem;
     }
-    margin-inline: 2em 0;
-    font-size: 1.2rem;
+    &:not(:nth-child(1)) {
+      margin-inline: 2em 0;
+      font-size: 1.2rem;
+    }
   }
 }
