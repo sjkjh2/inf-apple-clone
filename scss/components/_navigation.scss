@@ -1,0 +1,38 @@
+@layer components {
+  .globalNav {
+    height: 4.4rem;
+  }
+  .globalNav__links,
+  .localNav__links {
+    display: flex;
+    align-items: center;
+    max-width: 100rem;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .globalNav__links {
+    justify-content: space-between;
+  }
+
+  .globalNav__item {
+    font-size: 1.4rem;
+    
+  }
+
+  .localNav {
+    height: 5.2rem;
+    background: linear-gradient(to bottom, #fff calc(100% - 1px), #ddd 1px);
+  }
+  .localNav__links {
+    
+  }
+  .locaNav__item {
+    &:nth-child(1) {
+      margin-inline: 0 auto;
+      font-weight: 900;
+      font-size: 1.6rem;
+    }
+    margin-inline: 2em 0;
+    font-size: 1.2rem;
+  }
+}

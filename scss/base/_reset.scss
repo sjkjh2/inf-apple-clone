@@ -1,0 +1,51 @@
+@layer Reset {
+  :where(html, body) {
+    min-height: 100dvh;
+  }
+  :where(html) {
+    text-size-adjust: none;
+  }
+  :where(body) {
+    margin: 0;
+    overflow-wrap: break-word;
+    text-size-adjust: none;
+  }
+  :where(:lang(ko)) {
+    word-break: keep-all;
+  }
+  :where(img) {
+    max-width: 100%;
+    height: auto;
+  }
+  :where([class]) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  :where([class])::before,
+  :where([class])::after {
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+  :where(ol[class], ul[class]) {
+    list-style: none;
+  }
+  :where(hr[class], button[class], fieldset[class], iframe[class], input[class], select[class], textarea[class]) {
+    border: 0;
+  }
+  :where(input[class], textarea[class]) {
+    border-radius: 0;
+  }
+  :where(button[class], input[class], mark[class], meter[class], progress[class]) {
+    background-color: transparent;
+  }
+  :where(table[class]) {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+  }
+  :where(button[class], input[class], meter[class], progress[class], select[class], textarea[class]) {
+    appearance: none;
+  }
+}
